@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Dashboardlayout from '../../Components/Dashboardlayout'
+import DashboardLayout from "../../components/DashboardLayout";
 import { Button, Card, Flex, Icon, Input, InputGroup, InputLeftElement, Tab, TabIndicator, TabList, TabPanel, TabPanels, Tabs, Tag, Text } from '@chakra-ui/react'
 import { MdDownload } from "react-icons/md";
 import TransactionTable from './Components/TransactionTable';
@@ -29,7 +29,7 @@ const TransactionPage = ({ title }) => {
         setSearchItem(e.target.value)
     }
     return (
-        < Dashboardlayout title={title} >
+        < DashboardLayout title={title} >
             <Flex justify="end" mt="6" mb="4">
                 <Button leftIcon={<Icon as={MdDownload} />}>Export CSV</Button>
             </Flex>
@@ -72,7 +72,7 @@ const TransactionPage = ({ title }) => {
                     </TabPanels>
                 </Tabs>
             </Card>
-        </ Dashboardlayout >
+        </ DashboardLayout >
     )
 }
 

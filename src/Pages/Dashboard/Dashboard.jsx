@@ -1,14 +1,13 @@
 import React from 'react'
-import Dashboardlayout from '../../Components/Dashboardlayout';
+import DashboardLayout from "../../components/DashboardLayout";
 import Portfolio from './Components/Portfolio';
 import PriceingSec from './Components/PriceingSec';
 import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import Transactions from './Components/Transactions';
-import InfoCard from './Components/InfoCard';
+import InfoCard from './components/InfoCard';
 const Dashboard = ({ title }) => {
-    console.log(title)
     return (
-        <Dashboardlayout title={title}>
+        <DashboardLayout title={title}>
             <Grid
                 gridTemplateColumns={{
                     base: "repeat(1, 1fr)",
@@ -44,7 +43,7 @@ const Dashboard = ({ title }) => {
                     />
                 </GridItem>
             </Grid>
-        </Dashboardlayout>
+        </DashboardLayout>
     )
 }
 
